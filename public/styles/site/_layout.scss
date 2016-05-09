@@ -1,6 +1,6 @@
-#header {
+/*#header {
 	margin-top: 30px;
-}
+}*/
 
 #footer {
 	margin-top: 30px;
@@ -15,21 +15,60 @@
     height: auto;
 }
 
-.hero-image {
+#main-content, #title-content, #main-text-container  {
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	object-fit: contain;
+}
+
+#title-content {
+	
+}
+
+.logo-container {
+	float: left;	
+}
+
+.title-container {
+	text-align: right;
+	float: right;
+}
+
+#tag-container {
+	clear: both;	
+}
+
+#title {
+	font-size: 7.5em;
+}
+
+#tagline {
+	text-align: right;
+	font-size: 3.5em;
+}
+
+.hero-image-container {
 	max-width: 100%;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	border-radius: 4px;
 }
 
 .main-text {
-	font-size: 20px;
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+.hero-image {
+	max-width: 66%;
+	object-fit: contain;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 body {
-	background: url("/images/graffiti.jpg")  no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background: url("/images/graffiti1.jpg")  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }

@@ -23,15 +23,21 @@
 	<body>
 		<div id="header">
 			<div class="container">
+				<div id="title-content">
+					<div class="logo-container">
+						<img src="/images/party-icon.svg.png" width="240">
+					</div>
+					<div class="title-container">
+						<h1 id="title">LoveBop</h1>
+					</div>
+					<div id="tag-container">
+						<h3 id="tagline">Get out. Get up. Get down.</h3>
+					</div>	
+				</div>	
+			</div>
+			<div class="container">
 				<div role="navigation" class="navbar navbar-default">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-							</button>
-							<a href="/" class="navbar-brand">LoveBop</a>
-						</div>
+					<div class="container-fluid">		
 						<div class="collapse navbar-collapse">
 							<ul class="nav navbar-nav navbar-left">
 									{{# each navLinks}}
@@ -53,36 +59,40 @@
 			</div>
 		</div>
 		<div id="body">
-			<!--
-				Flash messages allow you to display once-off status messages to users, e.g. form
-				validation errors, success messages, etc
-			-->
-			{{#if messages}}
-			<div id="flash-messages" class="container">
-				{{#if messages.info}}
-				<div class="alert alert-info">
-						{{{flashMessages messages.info}}}
+			<div class="container">
+				<div id="main-content">
+					<!--
+						Flash messages allow you to display once-off status messages to users, e.g. form
+						validation errors, success messages, etc
+					-->
+					{{#if messages}}
+					<div id="flash-messages" class="container">
+						{{#if messages.info}}
+						<div class="alert alert-info">
+								{{{flashMessages messages.info}}}
+						</div>
+						{{/if}}
+						{{#if messages.success}}
+						<div class="alert alert-success">
+								{{{flashMessages messages.success}}}
+						</div>
+						{{/if}}
+						{{#if messages.warning}}
+						<div class="alert alert-warning">
+								{{{flashMessages messages.warning}}}
+						</div>
+						{{/if}}
+						{{#if messages.error}}
+						<div class="alert alert-danger">
+								{{{flashMessages messages.error}}}
+						</div>
+						{{/if}}
+					</div>
+					{{/if}}
+					<!-- The content block should contain the body of your template's content-->
+					{{{body}}}
 				</div>
-				{{/if}}
-				{{#if messages.success}}
-				<div class="alert alert-success">
-						{{{flashMessages messages.success}}}
-				</div>
-				{{/if}}
-				{{#if messages.warning}}
-				<div class="alert alert-warning">
-						{{{flashMessages messages.warning}}}
-				</div>
-				{{/if}}
-				{{#if messages.error}}
-				<div class="alert alert-danger">
-						{{{flashMessages messages.error}}}
-				</div>
-				{{/if}}
 			</div>
-			{{/if}}
-			<!-- The content block should contain the body of your template's content-->
-			{{{body}}}
 		</div>
 		<div class="container">
 			<div id="footer">
