@@ -24,12 +24,10 @@ Testimonial.add({
     // author: { type: Types.Relationship, ref: 'User' },
     // createdAt: { type: Date, default: Date.now },
     // publishedAt: Date,
-    content: {
-    	quote: { type: String, required: true, initial: false },
-    	author: { type: String, required: true, initial: false },
-    	url_name: { type: String },
-    	url: { type: String }
-    }
+    quote: { type: String},
+    author: { type: String},
+    url_name: { type: String },
+    url: { type: String }
 });
 
 Testimonial.register();
