@@ -8,6 +8,9 @@ exports = module.exports = function(req, res) {
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
 	locals.section = 'events';
+
+	// Load the testimonials by sortOrder
+	view.query('events', keystone.list('Event').model.find().sort('sortOrder'));
 	
 	// Render the view
 	view.render('events');
