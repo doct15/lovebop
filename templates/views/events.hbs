@@ -12,11 +12,13 @@
 			{{name}}
 		</h3>
 		<h4>
-			{{location}}
+			at {{location}}
 		</h4>
 		<h4>
 			<!-- {{ date date }} uses handlebars helper where the first is the name of the helper and the second is the key from the db -->
-			{{date date}} {{ time start_at }} to {{ time end_at}} 
+			on {{date date}} 
+			from {{ time start_at }} 
+			to {{ time end_at}} 
 		</h4>
 		{{/each}}
 	{{else}}

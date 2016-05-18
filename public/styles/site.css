@@ -1055,7 +1055,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -5192,7 +5192,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Karla", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5305,7 +5305,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Karla", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5849,15 +5849,15 @@ button.close {
   text-align: right;
   float: right; }
 
-#tag-container {
+#strap-container {
   clear: both; }
 
 #title {
-  font-size: 7.5em; }
+  font-size: 6em; }
 
-#tagline {
+#strapline {
   text-align: right;
-  font-size: 3.5em; }
+  font-size: 3em; }
 
 .hero-image-container {
   max-width: 100%; }
@@ -5872,8 +5872,8 @@ button.close {
   margin-top: 30px;
   margin-bottom: 30px; }
 
-body {
-  background: url("/images/graffiti1.jpg") no-repeat center center fixed;
+#header {
+  background: url("/images/graffiti1.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

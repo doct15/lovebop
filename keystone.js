@@ -53,6 +53,9 @@ keystone.set('locals', {
 	editable: keystone.content.editable
 });
 
+keystone.set('google api key', 'AIzaSyDUE6cz9u8m_GraIXa3hhPgDlje1V1s6As');
+keystone.set('google server api key', 'process.env.GOOGLE_SERVER_KEY');
+
 // Load your project's Routes
 
 keystone.set('routes', require('./routes'));

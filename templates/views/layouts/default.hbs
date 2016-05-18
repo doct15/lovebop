@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>LoveBop</title>
+		<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link href="/styles/site.css" rel="stylesheet">
 
@@ -25,13 +26,13 @@
 			<div class="container">
 				<div id="title-content">
 					<div class="logo-container">
-						<img src="/images/party-icon.svg.png" width="240">
+						<img src="/images/party-icon.svg.png" width="160">
 					</div>
 					<div class="title-container">
 						<h1 id="title">LoveBop</h1>
 					</div>
-					<div id="tag-container">
-						<h3 id="tagline">Get out. Get up. Get down.</h3>
+					<div id="strap-container">
+						<h3 id="strapline">It's a movement.</h3>
 					</div>	
 				</div>	
 			</div>
@@ -45,13 +46,6 @@
 										<a href="{{ href }}">{{ label }}</a>
 									</li>
 								{{/each}}
-							</ul>
-							<ul class="nav navbar-nav navbar-right">
-								{{#if user}}
-								<li><a href="/keystone/signout">Sign Out</a></li>
-								{{else}}
-								<li><a href="/register">Register</a></li>
-								{{/if}}
 							</ul>
 						</div>
 					</div>
@@ -112,5 +106,6 @@
 		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
 		{{{isAdminEditorJS user}}}
 		<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js></script>
 	</body>
 </html>

@@ -10,8 +10,16 @@
 			{{quote}}
 		</h4>
 		<h3>
-			{{author}}, 
-			<a target="_blank" href="https://{{url}}">{{url_name}}</a>
+			{{#if url_name}}
+				{{ author }},
+				{{#if url}}
+					<a target="_blank" href="https://{{ url }}">{{url_name}}</a>
+				{{else}}
+					{{ url_name }}
+				{{/if}}
+			{{else}}
+				{{ author }}
+			{{/if}}	
 		</h3>
 		{{/each}}
 	{{else}}
