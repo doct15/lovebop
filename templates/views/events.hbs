@@ -4,7 +4,9 @@
 
 <div class="container">
 	<!-- if events -->
+
 	{{#if events}}
+
 		{{#each events}}
 		<h3>
 			{{name}}
@@ -13,10 +15,7 @@
 			{{location}}
 		</h4>
 		<h4>
-			{{date}}
-		</h4>
-		<h4>
-			{{start_at}}–{{end_at}}
+			{{formatted_date}} {{ formatted_start_at }} to {{formatted_end_at}}
 		</h4>
 		{{/each}}
 	{{else}}

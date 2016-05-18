@@ -13,11 +13,10 @@ var Event = new keystone.List('Event', {
 
 Event.add({ 
     title: { type: String, required: true },
-    name: { type: String},
-    location: { type: String},
-    date: { type: Types.Date, format: "DD MMM YYYY" },
-    start_at: { type: Types.Datetime, format: "HH:mm" },
-    end_at: { type: Types.Datetime, format: "HH:mm" },
+    name: { type: String },
+    location: { type: String },
+    start_at: { type: Date, format: "HH:mm" },
+    end_at: { type: Date, format: "HH:mm" },
 });
 
 Event.register();
