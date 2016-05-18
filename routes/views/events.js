@@ -18,7 +18,7 @@ exports = module.exports = function(req, res) {
 			
 			for (i = 0; i < results.length; i ++) {
 
-				results[i].formatted_date = results[i]._.start_at.format("D MMM YYYY");
+				results[i].formatted_date = results[i]._.start_at.format("D MMMM YYYY");
 				results[i].formatted_start_at = results[i]._.start_at.format("HH:mm");
 				results[i].formatted_end_at = results[i]._.end_at.format("HH:mm");
 			}

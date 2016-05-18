@@ -15,8 +15,11 @@ Event.add({
     title: { type: String, required: true },
     name: { type: String },
     location: { type: String },
+    date: { type: Types.Date, format: "D MMM YYYY" },
     start_at: { type: Date, format: "HH:mm" },
     end_at: { type: Date, format: "HH:mm" },
 });
 
+
+Event.defaultColumns = 'title, location, date, start_at, end_at';
 Event.register();

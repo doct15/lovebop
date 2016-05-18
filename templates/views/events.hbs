@@ -15,7 +15,8 @@
 			{{location}}
 		</h4>
 		<h4>
-			{{formatted_date}} {{ formatted_start_at }} to {{formatted_end_at}}
+			<!-- {{ date date }} uses handlebars helper where the first is the name of the helper and the second is the key from the db -->
+			{{date date}} {{ formatted_start_at }} to {{formatted_end_at}} 
 		</h4>
 		{{/each}}
 	{{else}}
