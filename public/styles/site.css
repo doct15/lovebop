@@ -5855,6 +5855,10 @@ button.close {
 #title {
   font-size: 6em; }
 
+@media (max-width: 768px) {
+  #title {
+    font-size: 4em; } }
+
 #strapline {
   text-align: right;
   font-size: 3em; }
