@@ -15,11 +15,11 @@
     height: auto;
 }
 
-#main-content, #title-content, #main-text-container  {
-	/*background-color: rgba(0,0,0,0.3);
-	color: #fff;*/
-/*	padding: 20px;
-*/	margin-bottom: 20px;
+#main-content, #main-text-container  {
+	background-color: rgba(255,255, 255, 0.8);
+	/*color: #fff;*/
+	padding: 20px;
+	margin-bottom: 20px;
 	object-fit: contain;
 }
 
@@ -75,11 +75,12 @@
 }
 
 #all-content {
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(255,255,255,0.1);
+	/*background-color: lighten($brand-primary, 20%);*/
 }
 
 body {
-	background: url("/images/graffiti1.jpg")  no-repeat center center;
+	background: url("/images/stars.jpg")  no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
