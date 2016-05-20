@@ -90,4 +90,15 @@ body {
 	margin-bottom: 30px;
 }
 
+.categories-container {
+	margin: 20px 0px;
+}
 
+.blog-categories-list {
+	display: inline;
+	padding: 10px;
+	margin-right: 10px;
+	color: #fff;
+	background-color: lighten($brand-secondary, 10%);
+
+}
