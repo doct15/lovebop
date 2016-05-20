@@ -3968,11 +3968,11 @@ tbody.collapse.in {
     color: #ccc;
     background-color: transparent; }
   .navbar-default .navbar-toggle {
-    border-color: #ddd; }
+    border-color: #fff; }
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-      background-color: #ddd; }
+      background-color: #fff; }
     .navbar-default .navbar-toggle .icon-bar {
-      background-color: #888; }
+      background-color: #ddd; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border-color: #f83b03; }
@@ -5821,6 +5821,19 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+body {
+  background: url("/images/stars.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#all-content {
+  background-color: rgba(255, 255, 255, 0.1); }
+
+#lovebop-logo {
+  width: 480px; }
+
 #footer {
   margin-top: 30px;
   border-top: 1px solid #eeeeee;
@@ -5853,21 +5866,24 @@ button.close {
 #title {
   font-size: 6em; }
 
-@media (max-width: 768px) {
-  #title {
-    font-size: 4em; } }
-
 #strapline {
   text-align: right;
-  font-size: 3em;
-  color: #FC5321; }
+  font-size: 4em;
+  color: #FC5321;
+  font-style: italic;
+  font-weight: 700; }
+
+@media (max-width: 768px) {
+  #lovebop-logo {
+    width: 240px; }
+  #strapline {
+    font-size: 2em; } }
 
 .hero-image-container {
   max-width: 100%; }
 
 .main-text {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   font-size: 1.5em; }
 
 .hero-image {
@@ -5875,14 +5891,3 @@ button.close {
   object-fit: contain;
   margin-top: 30px;
   margin-bottom: 30px; }
-
-#all-content {
-  background-color: rgba(255, 255, 255, 0.1);
-  /*background-color: lighten($brand-primary, 20%);*/ }
-
-body {
-  background: url("/images/stars.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }

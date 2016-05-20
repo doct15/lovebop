@@ -1,5 +1,21 @@
+body {
+	background: url("/images/stars.jpg")  no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#all-content {
+	background-color: rgba(255,255,255,0.1);
+}
+
 #header {
 	
+}
+
+#lovebop-logo {
+	width: 480px;
 }
 
 #footer {
@@ -23,10 +39,6 @@
 	object-fit: contain;
 }
 
-#title-content {
-	
-}
-
 .logo-container {
 	margin-top: 30px;
 	float: left;	
@@ -45,16 +57,21 @@
 	font-size: 6em;
 }
 
-@media (max-width: 768px) {
-	#title {
-		font-size: 4em;
-	}
-}
-
 #strapline {
 	text-align: right;
-	font-size: 3em;
+	font-size: 4em;
 	color: $brand-secondary;
+	font-style: italic;
+	font-weight: 700;
+}
+
+@media (max-width: 768px) {
+	#lovebop-logo {
+		width: 240px;
+	}
+	#strapline {
+		font-size: 2em;
+	}
 }
 
 .hero-image-container {
@@ -62,8 +79,7 @@
 }
 
 .main-text {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px;
 	font-size: 1.5em;
 }
 
@@ -74,15 +90,4 @@
 	margin-bottom: 30px;
 }
 
-#all-content {
-	background-color: rgba(255,255,255,0.1);
-	/*background-color: lighten($brand-primary, 20%);*/
-}
 
-body {
-	background: url("/images/stars.jpg")  no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
