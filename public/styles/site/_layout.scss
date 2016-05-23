@@ -86,14 +86,17 @@ body {
 	max-width: 100%;
 }
 
-.main-text, .event-text {
-	font-size: 1.5em;
-}
-
 .hero-image {
 	max-width: 100%;
 	object-fit: contain;
-	margin-bottom: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.main-text, .event-text {
+	/*font-size: 1.5em;*/
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 .categories-container {
@@ -119,10 +122,12 @@ body {
 	margin-right: 20px;
 }
 
-.event-container {
-	padding-bottom: 40px;
-	margin-bottom: 30px;
-	border-bottom: 1px solid;
+.event-container, .blog-container {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	border-top: 1px solid;
 }
 
 .event-head, .event-text {

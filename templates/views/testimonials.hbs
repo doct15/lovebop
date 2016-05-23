@@ -1,26 +1,23 @@
-<div class="container">
+<div class="main-text-container">
 	<h1>Testimonials</h1>
-</div>
 
-<div class="container">
 	<!-- if galleries -->
 	{{#if testimonials}}
 		{{#each testimonials}}
-		<h4>
+		<p class="main-text">
 			{{quote}}
-		</h4>
-		<h3>
-			{{#if url_name}}
-				{{ author }},
+		<br>
+			– {{#if url_name}}
+				<i>{{ author }},</i>
 				{{#if url}}
-					<a target="_blank" href="https://{{ url }}">{{url_name}}</a>
+					<i><a target="_blank" href="https://{{ url }}">{{url_name}}</a></i>
 				{{else}}
-					{{ url_name }}
+					<i>{{ url_name }}</i>
 				{{/if}}
 			{{else}}
-				{{ author }}
+				<i>{{ author }}</i>
 			{{/if}}	
-		</h3>
+		</p>
 		{{/each}}
 	{{else}}
 	<!-- else -->
