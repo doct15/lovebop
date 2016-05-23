@@ -25,6 +25,14 @@ body {
 	color: #777777;
 }
 
+.footer-content {
+	text-align: center;
+}
+
+.social-logo {
+	width: 20px;
+}
+
 .gallery-image img{
     display: block;
     max-width: 100%;
@@ -34,7 +42,7 @@ body {
 #main-content, #main-text-container  {
 	background-color: rgba(255,255, 255, 0.8);
 	/*color: #fff;*/
-	padding: 20px;
+	padding: 40px;
 	margin-bottom: 20px;
 	object-fit: contain;
 }
@@ -78,15 +86,13 @@ body {
 	max-width: 100%;
 }
 
-.main-text {
-	padding: 20px;
+.main-text, .event-text {
 	font-size: 1.5em;
 }
 
 .hero-image {
-	max-width: 66%;
+	max-width: 100%;
 	object-fit: contain;
-	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
@@ -101,4 +107,24 @@ body {
 	color: #fff;
 	background-color: lighten($brand-secondary, 10%);
 
+}
+
+.social-links-container {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.blog-social-icon {
+	width: 20px;
+	margin-right: 20px;
+}
+
+.event-container {
+	padding-bottom: 40px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid;
+}
+
+.event-head, .event-text {
+	margin-bottom: 20px;
 }

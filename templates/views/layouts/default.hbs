@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>LoveBop</title>
 		<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="/images/LoveBop-icon.png" type="image/x-icon">
 		<link href="/styles/site.css" rel="stylesheet">
 
 		{{!-- This file provides the default styling for the KeystoneJS Content Editor
@@ -19,7 +19,8 @@
 			<script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js"></script>
 			<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-
+		<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
 	</head>
 	<body>
 		<div id="all-content">
@@ -99,23 +100,21 @@
 		</div>
 		<div class="container">
 			<div id="footer">
-				<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
+				<div class="row">
+					  <div class="col-xs-6 col-sm-4">
+							<p class="footer-content">Visit us on <a href="http://facebook.com" target="_blank"><img class="social-logo" src="/images/footer/facebook_footer.png"></a> and <a href="http://twitter.com" target="_blank"><img class="social-logo" src="/images/footer/twitter_footer.png"></a></p>
+						</div>	
+				  <div class="col-xs-6 col-sm-4">
+						<p class="footer-content">Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a></p>
+					</div>
+				  <div class="col-xs-12 col-sm-4">
+						<p class="footer-content">Website by <a href="http://charliefurniss.com" target="_blank">charliefurniss.com</a></p>
+					</div>	
 			</div>
 		</div>
 		</div>
-		{{!--
-			//- jQuery 1.11.3 is included by default, and required by both Bootstrap
-			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
-			//- you can upgrade to 2.1.4 (also bundled) for better performance.
-		--}}
 		<script src="/js/jquery/jquery-1.11.3.min.js"></script>
-		{{!--
-			//- Customise which Bootstrap javascript files are served by including
-			//- them specifically here, instead of bootstrap-3.3.5.min.js
-		--}}
 		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
 		{{{isAdminEditorJS user}}}
-		<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js"></script>
 	</body>
 </html>

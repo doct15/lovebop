@@ -20,7 +20,11 @@
 					<p class="lead text-muted">{{{categoryList categories prefix="Posted in "}}}
 							{{#if author.name.first}}by {{author.name.first}}{{/if}}
 					</p>
-					<p>{{{content.extended}}}</p>
+					<!-- {{#if post.image.exists}} -->
+						<img src="http://res.cloudinary.com/keystone-demo/image/upload/v1463759981/wyf8n2gavo4n4iviptqd.jpg" width=160 height=160 crop='fit'/>
+						<!-- {{{ post.image image width=160 height=160 crop='fit' }}} -->
+					<!-- {{/if}} -->
+					<p>{{{content.brief}}}</p>
 					<p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>
 				</div>
 				{{/each}}

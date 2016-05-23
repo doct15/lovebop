@@ -56,6 +56,8 @@ keystone.set('locals', {
 keystone.set('google api key', 'AIzaSyDUE6cz9u8m_GraIXa3hhPgDlje1V1s6As');
 keystone.set('google server api key', 'process.env.GOOGLE_SERVER_KEY');
 
+keystone.set('baseUrl', (keystone.get('env') == 'production') ? 'https://nodevision.com.au/' : 'http://localhost:3000/');
+
 // Load your project's Routes
 
 keystone.set('routes', require('./routes'));

@@ -1,25 +1,26 @@
-<div class="container">
-	<h1>Events</h1>
-</div>
-
-<div class="container">
+<div class="main-text-container">
+	<!-- <h1>Events</h1> -->
 	<!-- if events -->
-
 	{{#if events}}
-
 		{{#each events}}
-		<h3>
-			{{name}}
-		</h3>
-		<h4>
-			at {{location}}
-		</h4>
-		<h4>
-			<!-- {{ date date }} uses handlebars helper where the first is the name of the helper and the second is the key from the db -->
-			on {{date date}} 
-			from {{ time start_at }} 
-			to {{ time end_at}} 
-		</h4>
+		<div class="event-container">
+			<h2 class="event-head">
+				{{name}} @ <a target="_blank" href="{{ location_url }}">{{ location }}</a>
+			</h2>
+			<p class="event-text">
+				<!-- {{ date date }} uses handlebars helper where the first is the name of the helper and the second is the key from the db -->
+				{{date date}}
+			</p>
+			<p class="event-text">	
+				Doors: {{ time start_at }}–{{ time end_at}}
+			</p>
+			<p class="event-text">	
+				Tickets: £{{ price }}
+			</p>
+			<!-- <p class="event-text">	
+				<a target="_blank" href="{{ location_url }}">{{ location_url }}</a>
+			</p> -->
+		</div>
 		{{/each}}
 	{{else}}
 	<!-- else -->

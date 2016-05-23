@@ -15,9 +15,11 @@ Event.add({
     title: { type: String, required: true },
     name: { type: String },
     location: { type: String },
+    location_url: { type: Types.Url },
     date: { type: Types.Date, format: "D MMM YYYY" },
     start_at: { type: Date, format: "HH:mm" },
     end_at: { type: Date, format: "HH:mm" },
+    price: { type: Types.Money, currency: 'en-gb' }
 });
 
 
