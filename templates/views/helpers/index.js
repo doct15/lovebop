@@ -82,6 +82,60 @@ module.exports = function() {
 		return date;
 	};
 
+	_helpers.event_month = function(context, options) {
+		if (!options && context.hasOwnProperty('hash')) {
+			options = context;
+			context = undefined;
+			
+			if (this.publishedDate) {
+				context = this.publishedDate;
+			}
+		}
+		
+		// ensure that context is undefined, not null, as that can cause errors
+		context = context === null ? undefined : context;
+		
+		var f = options.hash.format || 'MMM',
+			timeago = options.hash.timeago,
+			date;
+		
+		// if context is undefined and given to moment then current timestamp is given
+		// nice if you just want the current year to define in a tmpl
+		if (timeago) {
+			date = moment(context).fromNow();
+		} else {
+			date = moment(context).format(f);
+		}
+		return date;
+	};
+
+	_helpers.event_date = function(context, options) {
+		if (!options && context.hasOwnProperty('hash')) {
+			options = context;
+			context = undefined;
+			
+			if (this.publishedDate) {
+				context = this.publishedDate;
+			}
+		}
+		
+		// ensure that context is undefined, not null, as that can cause errors
+		context = context === null ? undefined : context;
+		
+		var f = options.hash.format || 'D',
+			timeago = options.hash.timeago,
+			date;
+		
+		// if context is undefined and given to moment then current timestamp is given
+		// nice if you just want the current year to define in a tmpl
+		if (timeago) {
+			date = moment(context).fromNow();
+		} else {
+			date = moment(context).format(f);
+		}
+		return date;
+	};
+
 	_helpers.time = function(context, options) {
 		if (!options && context.hasOwnProperty('hash')) {
 			options = context;

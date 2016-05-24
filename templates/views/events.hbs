@@ -4,22 +4,32 @@
 	{{#if events}}
 		{{#each events}}
 		<div class="event-container">
-			<h2 class="event-head">
-				{{name}} @ <a target="_blank" href="{{ location_url }}">{{ location }}</a>
-			</h2>
-			<p class="event-text">
-				<!-- {{ date date }} uses handlebars helper where the first is the name of the helper and the second is the key from the db -->
-				{{date date}}
-			</p>
-			<p class="event-text">	
-				Doors: {{ time start_at }}–{{ time end_at}}
-			</p>
-			<p class="event-text">	
-				Tickets: £{{ price }}
-			</p>
-			<!-- <p class="event-text">	
-				<a target="_blank" href="{{ location_url }}">{{ location_url }}</a>
-			</p> -->
+			<div class="row">
+				<div class="col-lg-2 col-md-3 col-sm-4">
+					<div class="date-box"> 
+						<p class="event-month">{{event_month date}}</p>
+						<p class="event-date">{{event_date date}}</p>
+					</div>	
+				</div>
+				<div class="col-lg-10 col-md-7 col-sm-8">
+					<h2 class="event-head">
+						{{name}} @ <a target="_blank" href="{{ location_url }}">{{ location }}</a>
+					</h2>
+					<p class="event-text">
+						<!-- {{ date date }} uses handlebars helper where the first is the name of the helper and the second is the key from the db -->
+						{{date date}}
+					</p>
+					<p class="event-text">	
+						Doors: {{ time start_at }}–{{ time end_at}}
+					</p>
+					<p class="event-text">	
+						Tickets: £{{ price }}
+					</p>
+					<!-- <p class="event-text">	
+						<a target="_blank" href="{{ location_url }}">{{ location_url }}</a>
+					</p> -->
+				</div>
+			</div>
 		</div>
 		{{/each}}
 	{{else}}

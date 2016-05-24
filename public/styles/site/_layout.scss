@@ -41,7 +41,6 @@ body {
 
 #main-content, #main-text-container  {
 	background-color: rgba(255,255, 255, 0.8);
-	/*color: #fff;*/
 	padding: 40px;
 	margin-bottom: 20px;
 	object-fit: contain;
@@ -73,12 +72,15 @@ body {
 	font-weight: 700;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $screen-sm-min) {
 	#lovebop-logo {
 		width: 240px;
 	}
 	#strapline {
 		font-size: 2em;
+	}
+	.date-box {
+		display: none;
 	}
 }
 
@@ -133,3 +135,25 @@ body {
 .event-head, .event-text {
 	margin-bottom: 20px;
 }
+
+.date-box {
+	margin-top: 20px;
+	width: 100%;
+	padding: 40px;
+	background-color: lighten($brand-secondary, 10%);
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.5em;
+	float: left;
+}
+
+.event-date, .event-month {
+	margin-bottom: -10px;
+}
+
+.event-date {
+	font-size: 2em;
+}
+
+
