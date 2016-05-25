@@ -5822,7 +5822,8 @@ button.close {
     display: none !important; } }
 
 body {
-  background: url("/images/stars.jpg") no-repeat center center;
+  background-color: #262B48;
+  /*background: url("/images/stars.jpg")  no-repeat center center;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

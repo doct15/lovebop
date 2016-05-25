@@ -2,37 +2,37 @@ var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
 /**
- * Register Model
+ * Registration Model
  * =============
  */
 
-var Register = new keystone.List('Register', {
+var Registration = new keystone.List('Registration', {
 	nocreate: true,
 	noedit: true
 });
 
-Register.add({
+Registration.add({
 	name: { type: Types.Name, required: true },
 	email: { type: Types.Email, required: true },
-	enquiryType: { type: Types.Select, options: [
-		{ value: 'Registration', label: 'Please let me know about what\'s happening with LoveBop' }
-	] },
+	// enquiryType: { type: Types.Select, options: [
+	// 	{ value: 'Registration', label: 'Please let me know about what\'s happening with LoveBop' }
+	// ] },
 	message: { type: Types.Markdown},
 	createdAt: { type: Date, default: Date.now }
 });
 
-Register.schema.pre('save', function(next) {
+Registration.schema.pre('save', function(next) {
 	this.wasNew = this.isNew;
 	next();
 });
 
-Register.schema.post('save', function() {
+Registration.schema.post('save', function() {
 	if (this.wasNew) {
 		this.sendNotificationEmail();
 	}
 });
 
-Register.schema.methods.sendNotificationEmail = function(callback) {
+Registration.schema.methods.sendNotificationEmail = function(callback) {
 	
 	if ('function' !== typeof callback) {
 		callback = function() {};
@@ -58,6 +58,6 @@ Register.schema.methods.sendNotificationEmail = function(callback) {
 	
 };
 
-Register.defaultSort = '-createdAt';
-Register.defaultColumns = 'name, email, enquiryType, createdAt';
-Register.register();
+Registration.defaultSort = '-createdAt';
+Registration.defaultColumns = 'name, email, createdAt';
+Registration.register();
