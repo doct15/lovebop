@@ -12,8 +12,8 @@ var handlebars = require('express-handlebars');
 
 keystone.init({
 
-	'name': 'LoveBop',
-	'brand': 'LoveBop',
+	'name': 'Lovebop',
+	'brand': 'Lovebop',
 	
 	'sass': 'public',
 	'static': 'public',
@@ -105,7 +105,7 @@ keystone.set('nav', {
 	'posts': ['posts', 'post-categories'],
 	'galleries': 'galleries',
 	'registrations': 'registrations',
-	'enquiries': 'enquiries',
+	// 'enquiries': 'enquiries',
 	'users': 'users',
 	'testimonials': 'testimonials',
 	'events': 'events'
