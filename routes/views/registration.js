@@ -1,5 +1,4 @@
 var keystone = require('keystone');
-
 var Registration = keystone.list('Registration');
 
 exports = module.exports = function(req, res) {
