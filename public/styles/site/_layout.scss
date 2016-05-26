@@ -67,10 +67,11 @@ body {
 
 #strapline {
 	text-align: right;
-	font-size: 4em;
+	font-size: 3em;
+	font-family: 'Roboto Mono';
 	color: $brand-secondary;
 	font-style: italic;
-	font-weight: 700;
+	font-weight: 300;
 }
 
 @media (max-width: $screen-sm-min) {
