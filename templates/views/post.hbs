@@ -11,15 +11,15 @@
 						{{#if author.name.first}}by {{author.name.first}}{{/if}}
 					</h5>
 					<div class="social-links-container">
-						<a class="ion-social-twitter" href="https://twitter.com/intent/tweet?text={{data.post.title}}&url={{data.post.fullPostUrl}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+						<a href="https://twitter.com/intent/tweet?text={{data.post.title}}&url={{data.post.fullPostUrl}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
 							<img class="blog-social-icon" src="/images/social-twitter.png">
 						</a>
-						<a class="ion-social-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{data.post.fullPostUrl}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-						<img class="blog-social-icon" src="/images/social-facebook.png">
+						<a href="https://www.facebook.com/sharer/sharer.php?u={{data.post.fullPostUrl}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+							<img class="blog-social-icon" src="/images/social-facebook.png">
 						</a>
-						<a class="ion-social-googleplus" href="https://plus.google.com/share?url={{data.post.fullPostUrl}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-						<img class="blog-social-icon" src="/images/social-googleplus.png">
-						</a>
+						<!-- <a href="https://plus.google.com/share?url={{data.post.fullPostUrl}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+							<img class="blog-social-icon" src="/images/social-instagram.png">
+						</a> -->
 					</div>
 				</header>
 				<div class="post">
