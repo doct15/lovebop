@@ -56,7 +56,7 @@ keystone.set('locals', {
 keystone.set('google api key', 'AIzaSyDUE6cz9u8m_GraIXa3hhPgDlje1V1s6As');
 keystone.set('google server api key', 'process.env.GOOGLE_SERVER_KEY');
 
-keystone.set('baseUrl', (keystone.get('env') == 'production') ? 'https://lovebop.herokuapp.com' : 'http://localhost:3000/');
+keystone.set('baseUrl', (keystone.get('env') == 'production') ? 'https://lovebop.herokuapp.com/' : 'http://localhost:3000/');
 
 // Load your project's Routes
 
