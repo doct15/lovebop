@@ -1140,7 +1140,7 @@ hr {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: inherit;
   line-height: 1.1;
   color: inherit; }
   h1 small,
@@ -5827,10 +5827,11 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  font-weight: 700; }
 
 #lovebop-logo {
-  width: 480px; }
+  width: 320px; }
 
 #footer {
   margin-top: 30px;
@@ -5872,10 +5873,9 @@ body {
 #strapline {
   text-align: right;
   font-size: 2.5em;
-  font-family: 'Roboto Mono';
   font-style: italic;
   color: #fff;
-  font-weight: 500; }
+  letter-spacing: 3px; }
 
 @media (max-width: 768px) {
   #lovebop-logo {
@@ -5914,8 +5914,12 @@ body {
   margin-top: 20px;
   margin-bottom: 15px; }
 
-.blog-social-icon {
-  width: 20px;
+.post-categories {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+.post-social-icon {
+  width: 40px;
   margin-right: 20px; }
 
 .event-container, .blog-container {
@@ -5944,3 +5948,6 @@ body {
 
 .event-date {
   font-size: 2em; }
+
+.signup-content {
+  margin-top: 32.5px; }

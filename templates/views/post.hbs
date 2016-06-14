@@ -6,20 +6,17 @@
 				<hr>
 				<header>
 					<h1>{{data.post.title}}</h1>
-					<h5>
+					<h5 class="post-categories">
 						{{{categoryList data.post.categories prefix="Posted in "}}}
 						{{#if author.name.first}}by {{author.name.first}}{{/if}}
 					</h5>
 					<div class="social-links-container">
 						<a href="https://twitter.com/intent/tweet?text={{data.post.title}}&url={{data.post.fullPostUrl}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-							<img class="blog-social-icon" src="/images/social-twitter.png">
+							<img class="post-social-icon" src="/images/social-twitter.png">
 						</a>
-						<a href="https://www.facebook.com/sharer/sharer.php?u={{data.post.fullPostUrl}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-							<img class="blog-social-icon" src="/images/social-facebook.png">
+						<a href="http://www.facebook.com/sharer/sharer.php?u={{data.post.fullPostUrl}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+							<img class="post-social-icon" src="/images/social-facebook.png">
 						</a>
-						<!-- <a href="https://plus.google.com/share?url={{data.post.fullPostUrl}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-							<img class="blog-social-icon" src="/images/social-instagram.png">
-						</a> -->
 					</div>
 				</header>
 				<div class="post">

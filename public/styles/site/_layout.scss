@@ -1,10 +1,11 @@
 body {
 	background-color: #262B48;
 	/*background: url("/images/stars.jpg")  no-repeat center center;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-weight: 700;
 }
 
 #header {
@@ -12,7 +13,7 @@ body {
 }
 
 #lovebop-logo {
-	width: 480px;
+	width: 320px;
 }
 
 #footer {
@@ -31,9 +32,9 @@ body {
 }
 
 .gallery-image img{
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 #main-content, #main-text-container  {
@@ -64,10 +65,9 @@ body {
 #strapline {
 	text-align: right;
 	font-size: 2.5em;
-	font-family: 'Roboto Mono';
 	font-style: italic;
 	color: #fff;
-	font-weight: 500;
+	letter-spacing: 3px;
 }
 
 @media (max-width: $screen-sm-min) {
@@ -118,8 +118,13 @@ body {
 	margin-bottom: 15px;
 }
 
-.blog-social-icon {
-	width: 20px;
+.post-categories {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.post-social-icon {
+	width: 40px;
 	margin-right: 20px;
 }
 
@@ -155,4 +160,7 @@ body {
 	font-size: 2em;
 }
 
+.signup-content {
+	margin-top: 32.5px;
+}
 
