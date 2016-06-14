@@ -128,7 +128,7 @@ body {
 	margin-right: 20px;
 }
 
-.post-social-link:hover {
+a.post-social-link, a.post-social-link:hover, a.post-social-link:active, a.post-social-link:visited {
 	text-decoration: none;
 }
 
