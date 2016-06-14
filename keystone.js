@@ -56,7 +56,7 @@ keystone.set('locals', {
 keystone.set('google api key', 'AIzaSyDUE6cz9u8m_GraIXa3hhPgDlje1V1s6As');
 keystone.set('google server api key', 'process.env.GOOGLE_SERVER_KEY');
 
-keystone.set('baseUrl', (keystone.get('env') == 'production') ? 'https://nodevision.com.au/' : 'http://localhost:3000/');
+keystone.set('baseUrl', (keystone.get('env') == 'production') ? 'https://www.lovebop.co.uk' : 'http://localhost:3000/');
 
 // Load your project's Routes
 
@@ -89,10 +89,10 @@ keystone.set('email locals', {
 
 keystone.set('email rules', [{
 	find: '/images/',
-	replace: (keystone.get('env') == 'production') ? 'http://www.your-server.com/images/' : 'http://localhost:3000/images/'
+	replace: (keystone.get('env') == 'production') ? 'http://www.lovebop.co.uk/images/' : 'http://localhost:3000/images/'
 }, {
 	find: '/keystone/',
-	replace: (keystone.get('env') == 'production') ? 'http://www.your-server.com/keystone/' : 'http://localhost:3000/keystone/'
+	replace: (keystone.get('env') == 'production') ? 'http://www.lovebop.co.uk/keystone/' : 'http://localhost:3000/keystone/'
 }]);
 
 // Load your project's email test routes
