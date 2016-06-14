@@ -5922,6 +5922,9 @@ body {
   width: 40px;
   margin-right: 20px; }
 
+.post-social-link:hover {
+  text-decoration: none; }
+
 .event-container, .blog-container {
   margin-top: 20px;
   margin-bottom: 10px;
