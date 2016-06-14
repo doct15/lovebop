@@ -1,0 +1,16 @@
+bmcgehee/lovebop:
+  Env:
+    - PORT: 3000
+  PkgInclude:
+    - '*'
+  PreInstall:
+    - echo "Starting PreInstall"
+    - sudo apt-get update
+    - sudo apt-get install nodejs -y
+    - sudo apt-get install npm -y
+  PostInstall:
+    - echo "Starting PostInstall"
+    - npm install
+  Exec:
+    - echo "Executing"
+    - /usr/bin/nodejs keystone.js
